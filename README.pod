@@ -1,0 +1,29 @@
+=encoding utf8
+
+=head1 A KUriFilter problem.
+
+This is a repository to investigate a problem with konsole:
+
+L<https://bugs.mageia.org/show_bug.cgi?id=17590> .
+
+The code was extracted from the KUriFilter documentation.
+
+=head2 How to reproduce.
+
+Type "make" and then type "./mytest.exe". You'll need to install some
+depenedent packages.
+
+=head2 Output here:
+
+    shlomif@telaviv1:~/kf5-kurifilt-test$ ./mytest.exe
+    org.kde.kurifilter-ikws: "shlomi fish"
+    org.kde.kurifilter-ikws: Keywords Engine: Loading config...
+    org.kde.kurifilter-ikws: Web Shortcuts Enabled:  true
+    org.kde.kurifilter-ikws: Default Shortcut:  ""
+    org.kde.kurifilter-ikws: Keyword Delimiter:  :
+    Got «Google»
+        Calculating result for Google:
+
+(Long wait)
+
+=cut

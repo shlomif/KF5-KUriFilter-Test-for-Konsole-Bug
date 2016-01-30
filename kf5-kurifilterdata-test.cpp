@@ -41,7 +41,10 @@ int main(int argc, char * argv[])
     QStringList l = data.preferredSearchProviders();
     for (int i = 0; i < l.size(); i++)
     {
-        std::cout << "Got «" << l.at(i).toLocal8Bit().constData() << "»" << std::endl;
+        QString s = l.at(i);
+        std::cout << "Got «" << s.toLocal8Bit().constData() << "»" << std::endl;
+        std::cout << "    Calculating result for " << s.toLocal8Bit().constData() << ":" << std::endl;
+        std::cout << "    Result = «" << data.iconNameForPreferredSearchProvider(s).toLocal8Bit().constData() << "»" << std::endl;
     }
     return 0;
 }
